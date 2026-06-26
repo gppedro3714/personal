@@ -1,127 +1,154 @@
 ---
-# Leave the homepage title empty to use the site title
-title: ''
-summary: ''
-date: 2022-10-24
+title: Pedro Gomes Pinto — Academic CV and Portfolio
+summary: "Personal academic website and portfolio for Pedro Gomes Pinto, Grad Student at Université de Lorraine, exploring Quantum Cosmology, Differential Geometry, and Philosophy of Physics."
+date: 2026-06-27
+design:
+  spacing: 6rem
 type: landing
-
 sections:
-  - block: resume-biography-3
+  - block: hero
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
-      username: me
-      text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
+        eyebrow: Grad Student at Université de Lorraine
+        title: Pedro Gomes Pinto
+        text: "Grad Student in Mathematics and Applications (Research) | Exploring Differential Geometry"
+        primary_action:
+          text: About Me
+          url: "#about"
+          icon: hero/user-circle
+          style: gradient
+        secondary_action:
+          text: Contact
+          url: "#contact"
+          icon: hero/envelope
+          style: text
+        trust:
+          text: Connect with me on social and professional platforms.
+        media:
+          type: image
+          src: assets/media/hero-portrait.jpg
+          alt: Portrait of Pedro Gomes Pinto
     design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
-      background:
-        gradient_mesh:
-          enable: true
-
-      # Name heading sizing to accommodate long or short names
-      name:
-        size: md # Options: xs, sm, md, lg (default), xl
-
-      # Avatar customization
-      avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
+        background:
+          color:
+            light: "#f5f5dc"
+            dark: "#013220"
+        spacing:
+          padding:
+            - 4rem
+            - 1rem
+            - 4rem
+            - 1rem
+        section_break:
+          fade_bottom: "#f5f5dc"
+    id: hero
   - block: markdown
     content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-
-        Please reach out to collaborate 😃
+        title: About
+        text:
+          |
+            **Biography**
+            
+            *(Details will be provided later)*
+            
+            Pedro Gomes Pinto is a graduate student at Université de Lorraine specializing in Quantum Cosmology, Differential Geometry, and Philosophy of Physics. With a deep passion for exploring the mathematical frameworks that underpin physical theories, Pedro is committed to advancing knowledge at the intersection of mathematics and theoretical physics.
     design:
-      columns: '1'
+        background:
+          color:
+            light: "#f5f5dc"
+            dark: "#013220"
+        spacing:
+          padding:
+            - 2rem
+            - 1rem
+            - 2rem
+            - 1rem
+    id: about
   - block: collection
-    id: papers
     content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
+        title: Publications
+        text: A curated list of scholarly publications and papers.
+        count: 0
+        page_type: publication
+        sort_by: Date
+        sort_ascending: false
     design:
-      view: article-grid
-      columns: 2
+        background:
+          color:
+            light: "#f5f5dc"
+            dark: "#013220"
+        spacing:
+          padding:
+            - 2rem
+            - 1rem
+            - 2rem
+            - 1rem
+    id: publications
   - block: collection
     content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
+        title: "Portfolio & Projects"
+        text: Highlighting key research projects and software tools.
+        count: 3
+        page_type: project
+        sort_by: Date
+        sort_ascending: false
+        filters:
+          tags:
+            - meta-topological
+            - quantum-cosmology
     design:
-      view: citation
-  - block: collection
-    id: talks
+        background:
+          color:
+            light: "#f5f5dc"
+            dark: "#013220"
+        spacing:
+          padding:
+            - 2rem
+            - 1rem
+            - 2rem
+            - 1rem
+    id: projects
+  - block: markdown
     content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
+        title: Contact
+        text:
+          |
+            Feel free to reach out via email or professional networks.
+            
+            - Email: [pedro@example.com](mailto:pedro@example.com)
+            - LinkedIn: [linkedin.com/in/pedrogp](https://linkedin.com/in/pedrogp)
+            - GitHub: [github.com/pedrogp](https://github.com/pedrogp)
+            - ORCID: [orcid.org/0000-0000-0000-0000](https://orcid.org/0000-0000-0000-0000)
+            - Google Scholar: [scholar.google.com/citations?user=abcdefg](https://scholar.google.com/citations?user=abcdefg)
     design:
-      view: card
-  - block: collection
-    id: news
+        background:
+          color:
+            light: "#f5f5dc"
+            dark: "#013220"
+        spacing:
+          padding:
+            - 2rem
+            - 1rem
+            - 2rem
+            - 1rem
+    id: contact
+  - block: markdown
     content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
+        title: Curriculum Vitae
+        text:
+          |
+            [Download Full CV](assets/media/pedro-gomes-pinto-cv.pdf)
+            
+            Alternatively, the CV can be embedded here or linked to from an external platform.
     design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
-  - block: cta-card
-    demo: true # Only display this section in the HugoBlox Kit demo site
-    content:
-      title: 👉 Build your own academic website like this
-      text: |-
-        This site is generated by HugoBlox Kit - the FREE, Hugo-based open source website builder trusted by 250,000+ academics like you.
-
-        <a class="github-button" href="https://github.com/HugoBlox/kit" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star HugoBlox/kit on GitHub">Star</a>
-
-        Easily build anything with blocks - no-code required!
-
-        From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.
-      button:
-        text: Get Started
-        url: https://hugoblox.com/templates/
-    design:
-      card:
-        # Card background color (CSS class)
-        css_class: 'bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-600 text-white shadow-2xl'
-        css_style: ''
+        background:
+          color:
+            light: "#f5f5dc"
+            dark: "#013220"
+        spacing:
+          padding:
+            - 2rem
+            - 1rem
+            - 2rem
+            - 1rem
+    id: cv
 ---
