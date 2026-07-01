@@ -33,7 +33,7 @@
   body{
     font-family: var(--body);
     color: var(--text);
-    background: var(--paper);
+    background: var(--);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
@@ -171,7 +171,7 @@
     background: var(--line); border: 1px solid var(--line);
   }
   .interest{
-    background: var(--paper-2); padding: 26px 24px;
+    background: var(---2); padding: 26px 24px;
   }
   .interest .num{ font-family: var(--mono); font-size: 0.75rem; color: var(--muted); }
   .interest h3{
@@ -186,26 +186,26 @@
   }
   @media (max-width: 680px){ .interest-grid{ grid-template-columns: 1fr; } }
 
-  /* ---------- PAPERS ---------- */
-  .paper-list{ display:flex; flex-direction: column; }
-  .paper-item{
+  /* ---------- S ---------- */
+  .-list{ display:flex; flex-direction: column; }
+  .-item{
     display:grid; grid-template-columns: 90px 1fr auto; gap: 20px; align-items: baseline;
     padding: 22px 0; border-top: 1px solid var(--line);
   }
-  .paper-item:last-child{ border-bottom: 1px solid var(--line); }
-  .paper-year{ font-family: var(--mono); font-size: 0.85rem; color: var(--muted); }
-  .paper-title{ font-weight: 500; font-size: 1.02rem; }
-  .paper-venue{ color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
-  .paper-link{
+  .-item:last-child{ border-bottom: 1px solid var(--line); }
+  .-year{ font-family: var(--mono); font-size: 0.85rem; color: var(--muted); }
+  .-title{ font-weight: 500; font-size: 1.02rem; }
+  .-venue{ color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+  .-link{
     font-family: var(--mono); font-size: 0.78rem; text-decoration: none;
     color: var(--indigo); white-space: nowrap;
   }
-  .paper-link:hover{ color: var(--coral); }
-  .paper-placeholder{
+  .-link:hover{ color: var(--coral); }
+  .-placeholder{
     color: var(--muted); font-style: italic; font-size: 0.95rem; padding: 22px 0;
   }
   @media (max-width: 680px){
-    .paper-item{ grid-template-columns: 1fr; gap: 6px; }
+    .-item{ grid-template-columns: 1fr; gap: 6px; }
   }
 
   /* ---------- CV ---------- */
@@ -248,7 +248,7 @@
     <ul class="navlinks">
       <li><a href="#about">about</a></li>
       <li><a href="#research">research</a></li>
-      <li><a href="#papers">papers</a></li>
+      <li><a href="#s">s</a></li>
       <li><a href="#cv">cv</a></li>
       <li><a href="#contact">contact</a></li>
     </ul>
@@ -313,21 +313,28 @@
   </div>
 </section>
 
-<section class="block" id="papers">
+<section class="block" id="s">
   <div class="wrap">
     <div class="section-head">
       <div class="tag">§3</div>
-      <h2>Papers &amp; preprints</h2>
+      <h2>s &amp; preprints</h2>
     </div>
     <div class="section-body">
-      <div class="paper-list">
+      <div class="-list">
         <p class="paper-placeholder">Nothing academically official published yet.</p>
         <div class="paper-item">
           <div class="paper-year">2026</div>
           <div>
               <div class="paper-title">Meta-Topological Structures in Narrative Quantum Cosmology</div>
           </div>
-          <a href="papers/paper-1-title.pdf" class="paper-link">PDF ↗</a>
+          <a href="papers/SciADVpaper.pdf" class="paper-link">PDF ↗</a>
+        </div>
+        <div class="paper-item">
+          <div class="paper-year">2023</div>
+          <div>
+              <div class="paper-title">Application de la théorie des noeuds à l'ADN</div>
+          </div>
+          <a href="papers/Knotpaper.pdf" class="paper-link">PDF ↗</a>
         </div>
       </div>
     </div>
